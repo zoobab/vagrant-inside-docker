@@ -7,4 +7,4 @@ RUN apt-get install -yy virtualbox vagrant
 RUN mkdir -pv /root/workdir
 WORKDIR /root/workdir
 RUN vagrant init hashicorp/precise64
-RUN vagrant up
+#RUN vagrant up
