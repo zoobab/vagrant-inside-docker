@@ -27,6 +27,8 @@ Screenshot
 
 Everybody love screenshots:
 
+![Vagrant running inside a Docker container with OpenWRT as small distro ](https://raw.githubusercontent.com/zoobab/vagrant-inside-docker/master/vagrant-inside-docker-openwrt.png)
+
 
 ```
 zoobab@filez /home/zoobab/vagrant-inside-docker [33]$ ./run.sh 
