@@ -5,7 +5,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu/ xenial multiverse" >> /etc/apt/s
 RUN apt-get update
 RUN apt-get install -yy virtualbox vagrant virtualbox-guest-additions-iso vim
 # using Ubuntu xenial
-RUN mkdir -pv /root/vagrant-xenial
-WORKDIR /root/vagrant-xenial
-RUN vagrant init ubuntu/xenial64
-RUN vagrant box add ubuntu/xenial64
+RUN mkdir -pv /root/vagrant-openwrt
+WORKDIR /root/vagrant-openwrt
+RUN vagrant init living42/openwrt-15.05-x86
+RUN vagrant box add living42/openwrt-15.05-x86
