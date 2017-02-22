@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure(2) do |config|
+  config.vm.box = "living42/openwrt-15.05-x86"
+  config.vm.network "forwarded_port", guest: 80, host: 8081 
+  # since we haven't Guest additions, so this feature is not support
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.customize ["modifyvm", :id, "--usb", "on"]
+    vb.customize ["modifyvm", :id, "--usbehci", "off"]
+  end
+
+end
