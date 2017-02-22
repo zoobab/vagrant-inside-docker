@@ -13,6 +13,15 @@ Usage
 
 Just launch ```./run.sh```
 
+Oneliner
+========
+
+You can also run it as a oneliner:
+
+```
+docker run --privileged -v /dev/vboxdrv:/dev/vboxdrv -v /dev/vboxnetctl:/dev/vboxnetctl -it zoobab/vagrant-inside-docker:latest /bin/bash -c "vagrant up && vagrant ssh"
+```
+
 Screenshot
 ==========
 
@@ -72,20 +81,10 @@ vagrant@OpenWrt:~$
 
 ```
 
-Oneliner
-========
-
-You can also run it as a oneliner:
-
-```
-docker run --privileged -v /dev/vboxdrv:/dev/vboxdrv -v /dev/vboxnetctl:/dev/vboxnetctl -it zoobab/vagrant-inside-docker:latest /bin/bash -c "vagrant up && vagrant ssh"
-```
-
-
 Bugs
 ====
 
-* Sometimes ```docker stop``` takes time to stop the running container. 
+* Sometimes ```docker stop``` takes time to stop the running container, or never stops it :-)
 * Sometimes virtualbox of the GUEST container is very sensitive to the version
 of the HOST, so the closer they are the better.
 * I had to upgrade and do some debian pinning to have virtualbox and vagrant
