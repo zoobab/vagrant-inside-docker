@@ -72,6 +72,16 @@ vagrant@OpenWrt:~$
 
 ```
 
+Oneliner
+========
+
+You can also run it as a oneliner:
+
+```
+docker run --privileged -v /dev/vboxdrv:/dev/vboxdrv -v /dev/vboxnetctl:/dev/vboxnetctl -it zoobab/vagrant-inside-docker:latest /bin/bash -c "vagrant up && vagrant ssh"
+```
+
+
 Bugs
 ====
 
