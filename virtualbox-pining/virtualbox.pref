@@ -1,0 +1,32 @@
+Package: virtualbox
+Pin: release n=xenial
+Pin-Priority: -10
+
+Package: virtualbox
+Pin: release n=zesty
+Pin-Priority: 900
+
+Package: virtualbox-dkms
+Pin: release n=xenial
+Pin-Priority: -10
+
+Package: virtualbox-dkms
+Pin: release n=zesty
+Pin-Priority: 900
+
+Package: vagrant
+Pin: release n=xenial
+Pin-Priority: -10
+
+Package: vagrant
+Pin: release n=zesty
+Pin-Priority: 900
+
+Package: ruby-bundler
+Pin: release n=xenial
+Pin-Priority: -10
+
+Package: ruby-bundler
+Pin: release n=zesty
+Pin-Priority: 900
+
