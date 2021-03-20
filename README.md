@@ -118,3 +118,4 @@ Links
 =====
 
 * FOSDEM2017: Running virtual machines in containers https://fosdem.org/2017/schedule/event/virtcontainers/
+* Docker-OSX, which uses KVM inside Docker: https://github.com/sickcodes/Docker-OSX/ and https://sick.codes/is-hackintosh-osx-kvm-or-docker-osx-legal/
